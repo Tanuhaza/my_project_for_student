@@ -14,4 +14,9 @@ import lombok.*;
 @AttributeOverride(name = "id", column = @Column(name = "group_id"))
 public class Group extends AbstractEntity {
 
+    @Column(name = "group_name", nullable = false)
+    private String group_name;
+
+
+
 }
